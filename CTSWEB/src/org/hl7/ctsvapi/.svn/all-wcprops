@@ -1,0 +1,425 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi
+END
+UnknownLanguageCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownLanguageCode.java
+END
+LookupProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupProperties.java
+END
+GetServiceNameResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetServiceNameResponse.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ObjectFactory.java
+END
+UnknownMimeTypeCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownMimeTypeCode.java
+END
+LookupConceptCodesByProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupConceptCodesByProperty.java
+END
+UnknownLanguageCode_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownLanguageCode_Exception.java
+END
+GetServiceDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/GetServiceDescription.java
+END
+BadlyFormedMatchText.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/BadlyFormedMatchText.java
+END
+ExpandCodeExpansionContextResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ExpandCodeExpansionContextResponse.java
+END
+UnexpectedError.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnexpectedError.java
+END
+UnknownCodeSystem_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownCodeSystem_Exception.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/package-info.java
+END
+UnknownMimeTypeCode_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownMimeTypeCode_Exception.java
+END
+GetSupportedMatchAlgorithms.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/GetSupportedMatchAlgorithms.java
+END
+ArrayOfConceptRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ArrayOfConceptRelationship.java
+END
+ConceptDesignation.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ConceptDesignation.java
+END
+UnknownRelationshipCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownRelationshipCode.java
+END
+BadlyFormedMatchText_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/BadlyFormedMatchText_Exception.java
+END
+ArrayOfConceptProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ArrayOfConceptProperty.java
+END
+GetCTSVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/GetCTSVersion.java
+END
+UnknownPropertyCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownPropertyCode.java
+END
+LookupConceptCodesByDesignation.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupConceptCodesByDesignation.java
+END
+UnexpectedError_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnexpectedError_Exception.java
+END
+BrowserOperationsService.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jengine/!svn/ver/3027/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsService.xml
+END
+LookupCompleteCodedConceptResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupCompleteCodedConceptResponse.java
+END
+UnknownMatchAlgorithm_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownMatchAlgorithm_Exception.java
+END
+ConceptId.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ConceptId.java
+END
+BrowserOperationsServiceProxy.proxy
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/jengine/!svn/ver/3027/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsServiceProxy.proxy
+END
+VocabBrowserServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/VocabBrowserServiceClient.java
+END
+GetSupportedCodeSystemsResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetSupportedCodeSystemsResponse.java
+END
+ConceptRelationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ConceptRelationship.java
+END
+UnknownRelationshipCode_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownRelationshipCode_Exception.java
+END
+ArrayOfConceptDesignation.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ArrayOfConceptDesignation.java
+END
+BrowserOperationsService.jaxrpc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsService.jaxrpc
+END
+BrowserOperationsService.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jengine/!svn/ver/3027/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsService.wsdl
+END
+ConceptProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ConceptProperty.java
+END
+GetServiceVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/GetServiceVersion.java
+END
+LookupCodeExpansionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupCodeExpansionResponse.java
+END
+RelatedCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/RelatedCode.java
+END
+LookupDesignationsResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupDesignationsResponse.java
+END
+BrowserOperations.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/BrowserOperations.java
+END
+CompleteCodedConceptDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/CompleteCodedConceptDescription.java
+END
+CTSVersionId.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/CTSVersionId.java
+END
+LookupPropertiesResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupPropertiesResponse.java
+END
+UnknownConceptCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownConceptCode.java
+END
+GetServiceName.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/GetServiceName.java
+END
+InvalidExpansionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/InvalidExpansionContext.java
+END
+UnknownCodeSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownCodeSystem.java
+END
+LookupConceptCodesByPropertyResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupConceptCodesByPropertyResponse.java
+END
+GetServiceDescriptionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetServiceDescriptionResponse.java
+END
+UnknownConceptCode_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownConceptCode_Exception.java
+END
+InvalidExpansionContext_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/InvalidExpansionContext_Exception.java
+END
+ExpandCodeExpansionContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ExpandCodeExpansionContext.java
+END
+UnknownMatchAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownMatchAlgorithm.java
+END
+GetSupportedMatchAlgorithmsResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetSupportedMatchAlgorithmsResponse.java
+END
+GetCTSVersionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetCTSVersionResponse.java
+END
+ArrayOfXsdString.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/ArrayOfXsdString.java
+END
+LookupConceptCodesByDesignationResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupConceptCodesByDesignationResponse.java
+END
+TimeoutError.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/TimeoutError.java
+END
+LookupCompleteCodedConcept.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupCompleteCodedConcept.java
+END
+BrowserOperationsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsService.java
+END
+GetSupportedCodeSystems.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetSupportedCodeSystems.java
+END
+UnknownPropertyCode_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/UnknownPropertyCode_Exception.java
+END
+CodeSystemIdAndVersions.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/CodeSystemIdAndVersions.java
+END
+GetServiceVersionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/GetServiceVersionResponse.java
+END
+LookupCodeExpansion.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupCodeExpansion.java
+END
+TimeoutError_Exception.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/TimeoutError_Exception.java
+END
+LookupDesignations.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/jengine/!svn/ver/3466/ctsweb/src/org/hl7/ctsvapi/LookupDesignations.java
+END
+BrowserOperationsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ctsvapi/BrowserOperationsImpl.java
+END

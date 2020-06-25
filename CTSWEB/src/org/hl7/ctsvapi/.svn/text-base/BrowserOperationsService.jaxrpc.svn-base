@@ -1,0 +1,513 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="../../../../public_html/WEB-INF/wsdl/VocabBrowser.wsdl"/>
+      <url path="ArrayOfXsdString.java"/>
+      <url path="ObjectFactory.java"/>
+      <url path="BadlyFormedMatchText.java"/>
+      <url path="ConceptDesignation.java"/>
+      <url path="UnknownConceptCode_Exception.java"/>
+      <url path="GetSupportedMatchAlgorithms.java"/>
+      <url path="GetSupportedMatchAlgorithmsResponse.java"/>
+      <url path="RelatedCode.java"/>
+      <url path="InvalidExpansionContext_Exception.java"/>
+      <url path="UnknownLanguageCode.java"/>
+      <url path="TimeoutError.java"/>
+      <url path="UnknownCodeSystem.java"/>
+      <url path="LookupCompleteCodedConceptResponse.java"/>
+      <url path="ConceptProperty.java"/>
+      <url path="GetSupportedCodeSystems.java"/>
+      <url path="LookupCodeExpansionResponse.java"/>
+      <url path="UnknownMimeTypeCode.java"/>
+      <url path="LookupCompleteCodedConcept.java"/>
+      <url path="package-info.java"/>
+      <url path="TimeoutError_Exception.java"/>
+      <url path="ExpandCodeExpansionContextResponse.java"/>
+      <url path="GetServiceDescriptionResponse.java"/>
+      <url path="UnknownRelationshipCode.java"/>
+      <url path="ConceptRelationship.java"/>
+      <url path="UnknownPropertyCode.java"/>
+      <url path="LookupConceptCodesByPropertyResponse.java"/>
+      <url path="LookupConceptCodesByProperty.java"/>
+      <url path="LookupConceptCodesByDesignation.java"/>
+      <url path="GetServiceVersionResponse.java"/>
+      <url path="UnknownConceptCode.java"/>
+      <url path="LookupConceptCodesByDesignationResponse.java"/>
+      <url path="BadlyFormedMatchText_Exception.java"/>
+      <url path="UnknownMimeTypeCode_Exception.java"/>
+      <url path="CTSVersionId.java"/>
+      <url path="GetSupportedCodeSystemsResponse.java"/>
+      <url path="LookupCodeExpansion.java"/>
+      <url path="UnknownPropertyCode_Exception.java"/>
+      <url path="CompleteCodedConceptDescription.java"/>
+      <url path="LookupDesignationsResponse.java"/>
+      <url path="UnknownLanguageCode_Exception.java"/>
+      <url path="GetServiceVersion.java"/>
+      <url path="InvalidExpansionContext.java"/>
+      <url path="CodeSystemIdAndVersions.java"/>
+      <url path="UnexpectedError.java"/>
+      <url path="ExpandCodeExpansionContext.java"/>
+      <url path="BrowserOperations.java"/>
+      <url path="GetCTSVersionResponse.java"/>
+      <url path="ArrayOfConceptDesignation.java"/>
+      <url path="GetServiceName.java"/>
+      <url path="UnknownCodeSystem_Exception.java"/>
+      <url path="UnknownMatchAlgorithm_Exception.java"/>
+      <url path="GetServiceNameResponse.java"/>
+      <url path="UnknownMatchAlgorithm.java"/>
+      <url path="UnknownRelationshipCode_Exception.java"/>
+      <url path="GetServiceDescription.java"/>
+      <url path="GetCTSVersion.java"/>
+      <url path="LookupProperties.java"/>
+      <url path="ArrayOfConceptProperty.java"/>
+      <url path="LookupPropertiesResponse.java"/>
+      <url path="UnexpectedError_Exception.java"/>
+      <url path="ConceptId.java"/>
+      <url path="LookupDesignations.java"/>
+      <url path="ArrayOfConceptRelationship.java"/>
+      <url path="BrowserOperationsImpl.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="BD_">
+         <hash>
+            <value n="BOUND_PORT_TYPE" v="{urn://hl7.org/CTSVAPI}BrowserOperations"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{urn://hl7.org/CTSVAPI}VocabBrowserServiceSoapBinding"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;java.lang.String>.getSupportedMatchAlgorithms"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.expandCodeExpansionContext.byte[]"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.lookupCodeExpansion.org.hl7.ctsvapi.ConceptId.java.lang.String.boolean.boolean.java.lang.String.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.CodeSystemIdAndVersions>.getSupportedCodeSystems.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="org.hl7.ctsvapi.CompleteCodedConceptDescription.lookupCompleteCodedConcept.org.hl7.ctsvapi.ConceptId"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByDesignation.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByProperty.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.java.util.List&lt;java.lang.String>.java.util.List&lt;java.lang.String>.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptDesignation>.lookupDesignations.org.hl7.ctsvapi.ConceptId.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptProperty>.lookupProperties.org.hl7.ctsvapi.ConceptId.java.util.List&lt;java.lang.String>.java.lang.String.java.lang.String.java.lang.String.java.util.List&lt;java.lang.String>"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="org.hl7.ctsvapi.CTSVersionId.getCTSVersion"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.lang.String.getServiceDescription"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.lang.String.getServiceName"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.lang.String.getServiceVersion"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <list n="BINDING_FILES"/>
+      <list n="GENERATED_FILES">
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ArrayOfXsdString.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ObjectFactory.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/BadlyFormedMatchText.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ConceptDesignation.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownConceptCode_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetSupportedMatchAlgorithms.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetSupportedMatchAlgorithmsResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/RelatedCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/InvalidExpansionContext_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownLanguageCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/TimeoutError.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownCodeSystem.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupCompleteCodedConceptResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ConceptProperty.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetSupportedCodeSystems.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupCodeExpansionResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownMimeTypeCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupCompleteCodedConcept.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/package-info.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/TimeoutError_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ExpandCodeExpansionContextResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceDescriptionResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownRelationshipCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ConceptRelationship.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownPropertyCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupConceptCodesByPropertyResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupConceptCodesByProperty.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupConceptCodesByDesignation.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceVersionResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownConceptCode.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupConceptCodesByDesignationResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/BadlyFormedMatchText_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownMimeTypeCode_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/CTSVersionId.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetSupportedCodeSystemsResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupCodeExpansion.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownPropertyCode_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/CompleteCodedConceptDescription.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupDesignationsResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownLanguageCode_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceVersion.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/InvalidExpansionContext.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/CodeSystemIdAndVersions.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnexpectedError.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ExpandCodeExpansionContext.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/BrowserOperations.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetCTSVersionResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ArrayOfConceptDesignation.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceName.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownCodeSystem_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownMatchAlgorithm_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceNameResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownMatchAlgorithm.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnknownRelationshipCode_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetServiceDescription.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/GetCTSVersion.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupProperties.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ArrayOfConceptProperty.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupPropertiesResponse.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/UnexpectedError_Exception.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ConceptId.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/LookupDesignations.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+         <hash>
+            <value n="GENERATED_FILE_NAME" v="/Users/wellerk/jdeveloper/mywork/scratchpad/Vocab/src/org/hl7/ctsvapi/ArrayOfConceptRelationship.java"/>
+            <value n="GENERATED_FILE_TYPE" v="ValueType"/>
+         </hash>
+      </list>
+      <value n="GENERATION_OPTION" v="ANNOTATIONS_WSDL_SEI"/>
+      <value n="GUID" v="af6257ca-013a-1000-8001-0a0000026446"/>
+      <value n="LAST_GENERATION_BOTTOM_UP" v="false"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="VocabBrowserService"/>
+            <value n="PORT_BINDING_NAME" v="{urn://hl7.org/CTSVAPI}VocabBrowserServiceSoapBinding"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;java.lang.String>.getSupportedMatchAlgorithms"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.expandCodeExpansionContext.byte[]"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.lookupCodeExpansion.org.hl7.ctsvapi.ConceptId.java.lang.String.boolean.boolean.java.lang.String.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.CodeSystemIdAndVersions>.getSupportedCodeSystems.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="org.hl7.ctsvapi.CompleteCodedConceptDescription.lookupCompleteCodedConcept.org.hl7.ctsvapi.ConceptId"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByDesignation.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByProperty.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.java.util.List&lt;java.lang.String>.java.util.List&lt;java.lang.String>.int.int"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptDesignation>.lookupDesignations.org.hl7.ctsvapi.ConceptId.java.lang.String.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptProperty>.lookupProperties.org.hl7.ctsvapi.ConceptId.java.util.List&lt;java.lang.String>.java.lang.String.java.lang.String.java.lang.String.java.util.List&lt;java.lang.String>"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="org.hl7.ctsvapi.CTSVersionId.getCTSVersion"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceDescription"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceName"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceVersion"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="localhost" port="8080" path="/axis/services/VocabBrowserService"/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="ADD_ANNOTATIONS">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.AnnotationProperties"/>
+         </hash>
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{urn://hl7.org/CTSVAPI}BrowserOperations"/>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="org.hl7.ctsvapi.BrowserOperationsImpl"/>
+            <value n="PT_SERVICE_INTERFACE" v="org.hl7.ctsvapi.BrowserOperations"/>
+            <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="org.hl7.ctsvapi.BrowserOperations"/>
+         </hash>
+      </list>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <url n="TARGET_PROJECT" path="../../../../Vocab.jpr"/>
+      <value n="TOPDOWN_GENERATION_OPTION" v="JAVA_SEI"/>
+      <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+      <url n="WS_REFERENCE_WSDL" path="../../../../public_html/WEB-INF/wsdl/VocabBrowser.wsdl"/>
+      <value n="WS_TARGET_NAMESPACE" v="urn://hl7.org/CTSVAPI"/>
+      <value n="WS_URI" v="BrowserOperationsService"/>
+      <url n="WS_WSDL_FILE" path="../../../../public_html/WEB-INF/wsdl/VocabBrowser.wsdl"/>
+   </hash>
+</jdevws:WebService>

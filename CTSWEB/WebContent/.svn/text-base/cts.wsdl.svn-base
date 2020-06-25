@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="urn://hl7.org/CTSVAPI" xmlns:s1="urn://cts.hl7.org/types" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="urn://hl7.org/CTSVAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn://hl7.org/CTSVAPI">
+      <s:import namespace="urn://cts.hl7.org/types" />
+      <s:element name="getCTSVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCTSVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCTSVersionReturn" type="tns:CTSVersionId" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CTSVersionId">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="major" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="minor" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getServiceName">
+        <s:complexType />
+      </s:element>
+      <s:element name="getServiceNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getServiceNameReturn" type="s1:ST" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getServiceDescription">
+        <s:complexType />
+      </s:element>
+      <s:element name="getServiceDescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getServiceDescriptionReturn" type="s1:ST" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getServiceVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="getServiceVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getServiceVersionReturn" type="s1:ST" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSupportedMapsVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSupportedMapsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="unbounded" name="getSupportedMapsReturn" type="tns:CodeMap" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CodeMap">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="map_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mapDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fromCodeSystem_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fromCodeSystem_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fromCodeSystem_version" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="toCodeSystem_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="toCodeSystem_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="toCodeSystem_version" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="mapCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fromConceptId" type="tns:ConceptId" />
+            <s:element minOccurs="0" maxOccurs="1" name="toCodeSystemId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mapName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ConceptId">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="codeSystem_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="concept_code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="mapCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mapCodeReturn" type="tns:MappedConceptCode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MappedConceptCode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="mappedConcept_id" type="tns:ConceptId" />
+          <s:element minOccurs="0" maxOccurs="1" name="mapQuality_code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn://cts.hl7.org/types">
+      <s:complexType name="ST">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="v" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getCTSVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:getCTSVersion" />
+  </wsdl:message>
+  <wsdl:message name="getCTSVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:getCTSVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getServiceNameSoapIn">
+    <wsdl:part name="parameters" element="tns:getServiceName" />
+  </wsdl:message>
+  <wsdl:message name="getServiceNameSoapOut">
+    <wsdl:part name="parameters" element="tns:getServiceNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getServiceDescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:getServiceDescription" />
+  </wsdl:message>
+  <wsdl:message name="getServiceDescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:getServiceDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getServiceVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:getServiceVersion" />
+  </wsdl:message>
+  <wsdl:message name="getServiceVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:getServiceVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSupportedMapsSoapIn">
+    <wsdl:part name="parameters" element="tns:getSupportedMapsVersion" />
+  </wsdl:message>
+  <wsdl:message name="getSupportedMapsSoapOut">
+    <wsdl:part name="parameters" element="tns:getSupportedMapsResponse" />
+  </wsdl:message>
+  <wsdl:message name="mapCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:mapCode" />
+  </wsdl:message>
+  <wsdl:message name="mapCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:mapCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CodeMappingSoap">
+    <wsdl:operation name="getCTSVersion">
+      <wsdl:input message="tns:getCTSVersionSoapIn" />
+      <wsdl:output message="tns:getCTSVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getServiceName">
+      <wsdl:input message="tns:getServiceNameSoapIn" />
+      <wsdl:output message="tns:getServiceNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDescription">
+      <wsdl:input message="tns:getServiceDescriptionSoapIn" />
+      <wsdl:output message="tns:getServiceDescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getServiceVersion">
+      <wsdl:input message="tns:getServiceVersionSoapIn" />
+      <wsdl:output message="tns:getServiceVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSupportedMaps">
+      <wsdl:input message="tns:getSupportedMapsSoapIn" />
+      <wsdl:output message="tns:getSupportedMapsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mapCode">
+      <wsdl:input message="tns:mapCodeSoapIn" />
+      <wsdl:output message="tns:mapCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CodeMappingSoap" type="tns:CodeMappingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCTSVersion">
+      <soap:operation soapAction="getCTSVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceName">
+      <soap:operation soapAction="getServiceName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDescription">
+      <soap:operation soapAction="getServiceDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceVersion">
+      <soap:operation soapAction="getServiceVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSupportedMaps">
+      <soap:operation soapAction="getSupportedMaps" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mapCode">
+      <soap:operation soapAction="mapCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CodeMappingSoap12" type="tns:CodeMappingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCTSVersion">
+      <soap12:operation soapAction="getCTSVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceName">
+      <soap12:operation soapAction="getServiceName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceDescription">
+      <soap12:operation soapAction="getServiceDescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getServiceVersion">
+      <soap12:operation soapAction="getServiceVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSupportedMaps">
+      <soap12:operation soapAction="getSupportedMaps" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mapCode">
+      <soap12:operation soapAction="mapCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CodeMapping">
+    <wsdl:port name="CodeMappingSoap" binding="tns:CodeMappingSoap">
+      <soap:address location="http://localhost:8080/CTService" />
+    </wsdl:port>
+    <wsdl:port name="CodeMappingSoap12" binding="tns:CodeMappingSoap12">
+      <soap12:address location="http://localhost:8080/CTService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

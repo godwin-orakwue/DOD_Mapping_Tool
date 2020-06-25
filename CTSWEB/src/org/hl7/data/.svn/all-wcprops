@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/data
+END
+CTSBaseDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jengine/!svn/ver/3467/ctsweb/src/org/hl7/data/CTSBaseDAO.java
+END
+CTSVocabs.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jengine/!svn/ver/3467/ctsweb/src/org/hl7/data/CTSVocabs.java
+END
+CTSMaps.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jengine/!svn/ver/3467/ctsweb/src/org/hl7/data/CTSMaps.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/data/package-info.java
+END

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#login.jsp" PATH="/login.jsp"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#login.jsp:0" NAME="item" PATH="/login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="failure::#loginfailed.jsp" NAME="output"
+    PATH="/loginfailed.jsp" TARGET="rules:#loginfailed.jsp"
+    TITLE="failure" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="success::#tabbedView.jsp" NAME="output1"
+    PATH="/tabbedView.jsp" TARGET="rules:#tabbedView.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#loginfailed.jsp" PATH="/loginfailed.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#loginfailed.jsp:0" NAME="item"
+   PATH="/loginfailed.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#login.jsp" NAME="output"
+    PATH="/login.jsp" TARGET="rules:#login.jsp" TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#tabbedView.jsp" PATH="/tabbedView.jsp"
+  SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#tabbedView.jsp:0" NAME="item"
+   PATH="/tabbedView.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="logout_btn::#login.jsp" NAME="output"
+    PATH="/login.jsp" TARGET="rules:#login.jsp" TITLE="logout_btn" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="success::#tabbedView.jsp" NAME="output1"
+    PATH="/tabbedView.jsp" TARGET="rules:#tabbedView.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

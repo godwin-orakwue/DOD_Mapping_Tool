@@ -1,0 +1,900 @@
+package org.ctsweb.backing;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.faces.component.html.HtmlOutputText;
+import javax.faces.context.FacesContext;
+import javax.faces.model.SelectItem;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.log4j.Logger;
+import org.ctsweb.data.CTSMap;
+import org.ctsweb.data.CTSMapData;
+import org.ctsweb.data.CTSMapDetail;
+import org.ctsweb.data.CTSMapDetailData;
+import org.hl7.chcs.data.CHCSRefData;
+import org.hl7.ctsvapi.VocabBrowserServiceClient;
+import org.hl7.data.CTSMaps;
+
+/**
+ * Tab backing class.
+ * 
+ * @author <a href="mailto:karl.a.weller@leidos.com">karl.a.weller</a>
+ * @version 1.0
+ */
+public class Tab {
+
+    /**
+     * Logger.
+     */
+    private static final Logger LOGGER =
+        Logger.getLogger(Tab.class.getName());
+
+    /**
+     * Selected tab.
+     */
+    private String selectedTab = "maps";
+    
+    /**
+     * Map name.
+     */
+    private String mapName = "";
+    
+    /**
+     * Map detail.
+     */
+    private List<CTSMapDetailData> mapDetail;
+    
+    /**
+     * Map data.
+     */
+    private CTSMapDetailData mapData = new CTSMapDetailData();
+    
+    /**
+     * From code.
+     */
+    private String currFromCode = "";
+    
+    /**
+     * Administrator flag.
+     */
+    private boolean admin;
+    
+    /**
+     * Select code display flag.
+     */
+    private boolean selectcodedisp = false;
+    
+    /**
+     * Select VA code display flag.
+     */
+    private boolean vaselectcodedisp = false;
+    
+    /**
+     * Edit from.
+     */
+//    private boolean editfrom;
+    
+//    private String editfromstyle = "";
+    
+    /**
+     * Error field.
+     */
+    private HtmlOutputText saveError = new HtmlOutputText();
+
+    /**
+     * Maps.
+     */
+    private List<CTSMapData> maps;
+        
+    /**
+     * Full lookup value.
+     */
+    private List<SelectItem> fulllookupValue = null;
+
+    /**
+     * Full VA lookup value.
+     */
+    private List<SelectItem> fullvalookupValue = null;
+    
+    /**
+     * Lookup value.
+     */
+    private List<SelectItem> lookupValue = null;
+
+    /**
+     * VA lookup value.
+     */
+    private List<SelectItem> valookupValue = null;
+    
+    /**
+     * Return code.
+     */
+    private String returncode = "";
+    
+    /**
+     * Filter text.
+     */
+    private String filterText = "";
+    
+    /**
+     * VA filter text.
+     */
+    private String vafilterText = "";
+    
+    /**
+     * Filter text.
+     */
+    private String mainFilterText = "";
+    
+    /**
+     * Scroller page.
+     */
+    private int scrollerPage = 1;
+    
+    /**
+     * Constructor.
+     */
+    public Tab() {
+        super();
+        CTSMap map = new CTSMap();
+        maps = map.getList();
+    }
+    
+    /**
+     * Get selected tab.
+     * 
+     * @return tab
+     */
+    public String getSelectedTab() {
+        return selectedTab;
+    }
+
+    /**
+     * Set selected tab.
+     * 
+     * @param selectedTab tab
+     */
+    public void setSelectedTab(String selectedTab) {
+        this.selectedTab = selectedTab;
+    }
+    
+    /**
+     * Check administrator flag.
+     * 
+     * @return the administrator flag
+     */
+    public boolean isAdmin() {
+        if ("true".equalsIgnoreCase(System.getProperty("ctsflat"))) {
+            this.admin = true;
+        } else {
+            HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
+            String sadmin = (String) session.getAttribute("admin");
+            if ("T".equals(sadmin) || "t".equals(sadmin)) {
+                this.admin = true;
+            } else {
+                this.admin = false;
+            }
+        }
+        return admin;
+    }
+    
+    /**
+     * View map.
+     * 
+     * @return viewmap
+     */
+    public String viewmap() {
+        String rtc = "viewmap";
+
+        scrollerPage = 1;
+        FacesContext context = FacesContext.getCurrentInstance();
+        HttpServletRequest myRequest = (HttpServletRequest) context.getExternalContext().getRequest();
+        if (myRequest != null && myRequest.getParameter("mapname") != null) {
+            mapName = myRequest.getParameter("mapname");
+            CTSMapDetail mdet = new CTSMapDetail(mapName);
+            mapDetail = mdet.getDetails(mainFilterText);
+        }
+        return rtc;
+    }
+
+    /**
+     * New map.
+     * 
+     * @return viewmapdetail
+     */
+    public String newmap() {
+        String rtc = "viewmapdetail";
+        getSaveError().setValue("");
+//        setEditfrom(true);
+//        setEditfromstyle("");
+        currFromCode = "";
+        returncode = "";
+        lookupValue = null;
+        valookupValue = null;
+        fulllookupValue = null;
+        fullvalookupValue = null;
+        setSelectcodedisp(false);
+        setVaselectcodedisp(false);
+        filterText = "";
+        vafilterText = "";
+        mapData = new CTSMapDetailData();
+        CTSMap map = new CTSMap();
+        CTSMapData mdata = map.getData(mapName);
+        mapData.setActive(true);
+        mapData.setFromOid(mdata.getFromOid());
+        mapData.setToOid(mdata.getToOid());
+        CHCSRefData ref = new CHCSRefData();
+        fulllookupValue = ref.getLookupValues(mapData.getToOid());
+        lookupValue = fulllookupValue;
+        if (lookupValue != null && lookupValue.size() > 0) {
+            setSelectcodedisp(true);
+        }
+        VocabBrowserServiceClient vocab = new VocabBrowserServiceClient();
+        fullvalookupValue = vocab.getCTSLookup(mapData.getFromOid());
+        valookupValue = fullvalookupValue;
+        if (valookupValue != null && valookupValue.size() > 0) {
+            setVaselectcodedisp(true);
+        }
+        
+        return rtc;
+    }
+    
+    /**
+     * View map detail.
+     * @return viewmapdetail
+     */
+    public String viewmapdetail() {
+        String rtc = "viewmapdetail";
+//        setEditfrom(false);
+//        setEditfromstyle("background-color:#C0C0C0");
+        returncode = "";
+        lookupValue = null;
+        valookupValue = null;
+        fulllookupValue = null;
+        fullvalookupValue = null;
+        setSelectcodedisp(false);
+        setVaselectcodedisp(false);
+        getSaveError().setValue("");
+        filterText = "";
+        vafilterText = "";
+        FacesContext context = FacesContext.getCurrentInstance();
+        HttpServletRequest myRequest = (HttpServletRequest) context.getExternalContext().getRequest();
+        if (myRequest != null && myRequest.getParameter("mapName") != null && myRequest.getParameter("fromCode") != null) {
+            mapName = myRequest.getParameter("mapName");
+            currFromCode = myRequest.getParameter("fromCode");
+            CTSMapDetail mdet = new CTSMapDetail(mapName);
+            mapDetail = mdet.getDetails(mainFilterText);
+            Iterator<CTSMapDetailData> iter = mapDetail.iterator();
+            while (iter.hasNext()) {
+                CTSMapDetailData data = iter.next();
+                if (data.getFromCode() != null && data.getFromCode().equals(currFromCode)) {
+                    mapData = new CTSMapDetailData(data);
+                    CHCSRefData ref = new CHCSRefData();
+                    fulllookupValue = ref.getLookupValues(mapData.getToOid());
+                    lookupValue = fulllookupValue;
+                    if (lookupValue != null && lookupValue.size() > 0) {
+                        setSelectcodedisp(true);
+                    }
+                    VocabBrowserServiceClient vocab = new VocabBrowserServiceClient();
+                    fullvalookupValue = vocab.getCTSLookup(mapData.getFromOid());
+                    valookupValue = fullvalookupValue;
+                    if (valookupValue != null && valookupValue.size() > 0) {
+                        setVaselectcodedisp(true);
+                    }
+                    break;
+                }
+            }
+        }
+        
+        return rtc;
+    }
+    
+    /**
+     * Delete map.
+     * 
+     * @return deletemap
+     */
+    public String deletemap() {
+        String rtc = "deletemap";
+
+        getSaveError().setValue("");
+        FacesContext context = FacesContext.getCurrentInstance();
+        HttpServletRequest myRequest = (HttpServletRequest) context.getExternalContext().getRequest();
+        if (myRequest != null && myRequest.getParameter("mapName") != null && myRequest.getParameter("fromCode") != null) {
+            mapName = myRequest.getParameter("mapName");
+            currFromCode = myRequest.getParameter("fromCode");
+            CTSMapDetail mdet = new CTSMapDetail(mapName);
+            mapDetail = mdet.getDetails(mainFilterText);
+            Iterator<CTSMapDetailData> iter = mapDetail.iterator();
+            while (iter.hasNext()) {
+                CTSMapDetailData data = iter.next();
+                if (data.getFromCode() != null && data.getFromCode().equals(currFromCode)) {
+                    mapData = new CTSMapDetailData(data);
+                    break;
+                }
+            }
+        }
+        return rtc;
+    }
+    
+    /**
+     * Delete.
+     * 
+     * @return success
+     */
+    public String delete() {
+        String rtc = "success";
+        
+        CTSMaps maps = CTSMaps.getInstance();
+        maps.delMap(mapData); 
+        CTSMapDetail mdet = new CTSMapDetail(mapName);
+        mapDetail = mdet.getDetails(mainFilterText);
+
+        return rtc;
+    }
+
+    /**
+     * Save.
+     * 
+     * @return success
+     */
+    public String save() {
+        String rtc = "success";
+        if (mapData.getFromCode() == null || mapData.getFromCode().length() == 0) {
+            getSaveError().setValue("Map From code is required.");
+            rtc = "viewmapdetail";
+        } else if (mapData.getToCode() == null || mapData.getToCode().length() == 0) {
+            getSaveError().setValue("Map To code is required.");
+            rtc = "viewmapdetail";
+        } else if ((currFromCode == null || currFromCode.length() == 0) || (currFromCode != null && currFromCode.length() > 0 && !currFromCode.equals(mapData.getFromCode()))) {
+            Iterator<CTSMapDetailData> iter = mapDetail.iterator();
+            while (iter.hasNext()) {
+                CTSMapDetailData cdet = iter.next();
+                if (cdet.getFromCode().equals(mapData.getFromCode())) {
+                    getSaveError().setValue("Map for code " + mapData.getFromCode() + " already exists.");
+                    rtc = "viewmapdetail";
+                    break;
+                }
+            }
+        }
+
+        if ("success".equalsIgnoreCase(rtc)) {
+            CTSMaps maps = CTSMaps.getInstance();
+            maps.addMap(mapData, currFromCode); 
+            CTSMapDetail mdet = new CTSMapDetail(mapName);
+            mapDetail = mdet.getDetails(mainFilterText);
+            getSaveError().setValue("");
+        }
+
+        return rtc;
+    }
+    
+    /**
+     * Main filter.
+     * 
+     * @return viewmap
+     */
+    public String mainFilter() {
+        CTSMapDetail mdet = new CTSMapDetail(mapName);
+        mapDetail = mdet.getDetails(mainFilterText);
+        return "viewmap";
+    }
+    
+    /**
+     * Lookup return.
+     * 
+     * @return success
+     */
+    public String lookupReturn() {
+        if (returncode != null && returncode.length() > 0) {
+            String[] pieces = returncode.split("\\|");
+            if (pieces.length >= 2) {
+                mapData.setToCode(pieces[0]);
+                mapData.setToDescription(pieces[1]);
+            }
+        }
+        return "success";
+    }
+
+    /**
+     * VA lookup return.
+     * 
+     * @return success
+     */
+    public String valookupReturn() {
+        if (returncode != null && returncode.length() > 0) {
+            String[] pieces = returncode.split("\\|");
+            if (pieces.length >= 2) {
+                mapData.setFromCode(pieces[0]);
+                mapData.setFromDescription(pieces[1]);
+            }
+        }
+        return "success";
+    }
+
+    /**
+     * Set administrator flag.
+     * 
+     * @param admin the administrator flag to set
+     */
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
+    /**
+     * Get maps.
+     * 
+     * @return the maps
+     */
+    public List<CTSMapData> getMaps() {
+        return maps;
+    }
+
+    /**
+     * Set maps.
+     * 
+     * @param maps the maps to set
+     */
+    public void setMaps(List<CTSMapData> maps) {
+        this.maps = maps;
+    }
+
+    /**
+     * Get map name.
+     * 
+     * @return the mapName
+     */
+    public String getMapName() {
+        return mapName;
+    }
+
+    /**
+     * Set map name.
+     * 
+     * @param mapName the mapName to set
+     */
+    public void setMapName(String mapName) {
+        this.mapName = mapName;
+    }
+
+    /**
+     * Get map detail.
+     * 
+     * @return the mapDetail
+     */
+    public List<CTSMapDetailData> getMapDetail() {
+        return mapDetail;
+    }
+
+    /**
+     * Set map detail.
+     * 
+     * @param mapDetail the mapDetail to set
+     */
+    public void setMapDetail(List<CTSMapDetailData> mapDetail) {
+        this.mapDetail = mapDetail;
+    }
+
+    /**
+     * Set scroller page.
+     * 
+     * @param scrollerPage the scrollerPage to set
+     */
+    public void setScrollerPage(int scrollerPage) {
+        this.scrollerPage = scrollerPage;
+    }
+
+    /**
+     * Get scroller page.
+     * 
+     * @return the scrollerPage
+     */
+    public int getScrollerPage() {
+        return scrollerPage;
+    }
+
+    /**
+     * Set map data.
+     * 
+     * @param mapData the mapData to set
+     */
+    public void setMapData(CTSMapDetailData mapData) {
+        this.mapData = mapData;
+    }
+
+    /**
+     * Get map data.
+     * 
+     * @return the mapData
+     */
+    public CTSMapDetailData getMapData() {
+        return mapData;
+    }
+
+    /**
+     * Set from code.
+     * 
+     * @param currFromCode the currFromCode to set
+     */
+    public void setCurrFromCode(String currFromCode) {
+        this.currFromCode = currFromCode;
+    }
+
+    /**
+     * Get from code.
+     * 
+     * @return the currFromCode
+     */
+    public String getCurrFromCode() {
+        return currFromCode;
+    }
+
+    /**
+     * Export CSV.
+     * 
+     * @return CSV
+     */
+    public String exportCSV() {
+        LOGGER.error("exportCSV");
+        try {
+            CTSMaps maps = CTSMaps.getInstance();
+            byte[] csvData = maps.getMapsCSV();
+            LOGGER.error("csvData size = " + csvData.length);
+            HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
+
+            response.setContentType("application/octet-stream");
+            response.setHeader("Content-Disposition", "attachment;filename=ctsmaps.csv");
+            response.getOutputStream().write(csvData);
+            response.getOutputStream().flush();
+            response.getOutputStream().close();
+            FacesContext.getCurrentInstance().responseComplete();
+        } catch (final Exception e) {
+            LOGGER.error("EXCEPTION: " + e.getMessage(), e);
+        }
+        return null;
+    }
+    
+    /**
+     * Export map.
+     * 
+     * @return map
+     */
+    public String exportmap() {
+        LOGGER.error("exportmap");
+        try {
+            FacesContext context = FacesContext.getCurrentInstance();
+            HttpServletRequest myRequest = (HttpServletRequest) context.getExternalContext().getRequest();
+            if (myRequest != null && myRequest.getParameter("fromOid") != null) {
+                CTSMaps maps = CTSMaps.getInstance();
+                String fromoid = myRequest.getParameter("fromOid");
+                String fromoid2 = fromoid.replace('.', '-');
+                byte[] csvData = maps.getMapsCSV(fromoid);
+                LOGGER.error("csvData size = " + csvData.length);
+                HttpServletResponse response = (HttpServletResponse) FacesContext.getCurrentInstance().getExternalContext().getResponse();
+              
+                response.setContentType("application/octet-stream");
+                response.setHeader("Content-Disposition", "attachment;filename=" + fromoid2 + "ctsmaps.csv");
+//                response.setHeader("Content-Disposition", "attachment;filename=ctsmaps.csv");
+                response.getOutputStream().write(csvData);
+                response.getOutputStream().flush();
+                response.getOutputStream().close();
+                FacesContext.getCurrentInstance().responseComplete();
+            } else {
+                return "success";
+            }
+        } catch (final Exception e) {
+            LOGGER.error("EXCEPTION: " + e.getMessage(), e);
+        }
+        return null;
+    }
+    
+    /**
+     * Select code.
+     * 
+     * @return selectcode
+     */
+    public String selectcode() {
+        returncode = "";
+        try {
+            if (mapData != null && mapData.getToCode() != null && mapData.getToCode().length() > 0) {
+                for (SelectItem label : lookupValue) {
+                    String value = (String) label.getValue();
+                    if (value.startsWith(mapData.getToCode() + "|")) {
+                        returncode = value;
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            LOGGER.error(ex.getMessage(), ex);
+        }
+        return "selectcode";
+    }
+
+    /**
+     * VA select code.
+     * 
+     * @return vaselectcode
+     */
+    public String vaselectcode() {
+        returncode = "";
+        try {
+            if (mapData != null && mapData.getFromCode() != null && mapData.getFromCode().length() > 0) {
+                for (SelectItem label : valookupValue) {
+                    String value = (String) label.getValue();
+                    if (value.startsWith(mapData.getFromCode() + "|")) {
+                        returncode = value;
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            LOGGER.error(ex.getMessage(), ex);
+        }
+        return "vaselectcode";
+    }
+
+    /**
+     * Filter.
+     * 
+     * @return select code
+     */
+    public String filter() {
+        LOGGER.error("filter text = " + filterText);
+        try {
+            if (filterText == null || filterText.length() == 0) {
+                lookupValue = fulllookupValue;
+            } else {
+                lookupValue = new ArrayList<SelectItem>();
+                for (SelectItem curr : fulllookupValue) {
+                    if (curr != null && curr.getValue() != null && curr.getValue() instanceof String && ((String) curr.getValue()).toUpperCase().indexOf(filterText.toUpperCase()) > -1) {
+                        lookupValue.add(curr);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            LOGGER.error(ex.getMessage(), ex);
+        }
+        return selectcode();
+    }
+    
+    /**
+     * VA filter.
+     * 
+     * @return vaselectcode
+     */
+    public String vafilter() {
+        try {
+            if (vafilterText == null || vafilterText.length() == 0) {
+                valookupValue = fullvalookupValue;
+            } else {
+                valookupValue = new ArrayList<SelectItem>();
+                for (SelectItem curr : fullvalookupValue) {
+                    if (curr != null && curr.getValue() != null && curr.getValue() instanceof String && ((String) curr.getValue()).toUpperCase().indexOf(vafilterText.toUpperCase()) > -1) {
+                        valookupValue.add(curr);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            LOGGER.error(ex.getMessage(), ex);
+        }
+        return vaselectcode();
+    }
+    
+//    /**
+//     * @param editfrom the editfrom to set
+//     */
+//    public void setEditfrom(boolean editfrom) {
+//        this.editfrom = editfrom;
+//    }
+//
+//    /**
+//     * @return the editfrom
+//     */
+//    public boolean isEditfrom() {
+//        return editfrom;
+//    }
+//
+//    /**
+//     * @param noteditfrom the noteditfrom to set
+//     */
+//    public void setNoteditfrom(boolean noteditfrom) {
+//        this.editfrom = !noteditfrom;
+//    }
+//
+//    /**
+//     * @return the noteditfrom
+//     */
+//    public boolean isNoteditfrom() {
+//        return !editfrom;
+//    }
+//
+//    /**
+//     * @param editfromstyle the editfromstyle to set
+//     */
+//    public void setEditfromstyle(String editfromstyle) {
+//        this.editfromstyle = editfromstyle;
+//    }
+//
+//    /**
+//     * @return the editfromstyle
+//     */
+//    public String getEditfromstyle() {
+//        return editfromstyle;
+//    }
+
+    /**
+     * Set save error.
+     * 
+     * @param saveError the saveError to set
+     */
+    public void setSaveError(HtmlOutputText saveError) {
+        this.saveError = saveError;
+    }
+
+    /**
+     * Get save error.
+     * 
+     * @return the saveError
+     */
+    public HtmlOutputText getSaveError() {
+        return saveError;
+    }
+
+    /**
+     * Set lookup value.
+     * 
+     * @param value the value to set
+     */
+    public void setLookupValue(List<SelectItem> value) {
+        this.lookupValue = value;
+    }
+
+    /**
+     * Get lookup value.
+     * 
+     * @return the lookup value
+     */
+    public List<SelectItem> getLookupValue() {
+        return lookupValue;
+    }
+
+    /**
+     * Set return code.
+     * 
+     * @param returncode the returncode to set
+     */
+    public void setReturncode(String returncode) {
+        this.returncode = returncode;
+    }
+
+    /**
+     * Get return code.
+     * 
+     * @return the returncode
+     */
+    public String getReturncode() {
+        return returncode;
+    }
+
+    /**
+     * Set select code display.
+     * 
+     * @param selectcodedisp the selectcodedisp to set
+     */
+    public void setSelectcodedisp(boolean selectcodedisp) {
+        this.selectcodedisp = selectcodedisp;
+    }
+
+    /**
+     * Get select code display.
+     * 
+     * @return the selectcodedisp
+     */
+    public boolean isSelectcodedisp() {
+        return selectcodedisp;
+    }
+
+    /**
+     * Get select VA code display.
+     * 
+     * @return the vaselectcodedisp
+     */
+    public boolean isVaselectcodedisp() {
+        return vaselectcodedisp;
+    }
+
+    /**
+     * Set VA select code display.
+     * 
+     * @param vaselectcodedisp the vaselectcodedisp to set
+     */
+    public void setVaselectcodedisp(boolean vaselectcodedisp) {
+        this.vaselectcodedisp = vaselectcodedisp;
+    }
+
+    /**
+     * Get VA lookup value.
+     * 
+     * @return the valookupValue
+     */
+    public List<SelectItem> getValookupValue() {
+        return valookupValue;
+    }
+
+    /**
+     * Set VA lookup value.
+     * 
+     * @param valookupValue the valookupValue to set
+     */
+    public void setValookupValue(List<SelectItem> valookupValue) {
+        this.valookupValue = valookupValue;
+    }
+
+    /**
+     * Set filter text.
+     * 
+     * @param filterText the filterText to set
+     */
+    public void setFilterText(String filterText) {
+        this.filterText = filterText;
+    }
+
+    /**
+     * Get filter text.
+     * 
+     * @return the filterText
+     */
+    public String getFilterText() {
+        return filterText;
+    }
+
+    /**
+     * Set VA filter text.
+     * 
+     * @param vafilterText the vafilterText to set
+     */
+    public void setVafilterText(String vafilterText) {
+        this.vafilterText = vafilterText;
+    }
+
+    /**
+     * Get VA filter text.
+     * 
+     * @return the vafilterText
+     */
+    public String getVafilterText() {
+        return vafilterText;
+    }
+
+    /**
+     * Set main filter text.
+     * 
+     * @param mainFilterText the mainFilterText to set
+     */
+    public void setMainFilterText(String mainFilterText) {
+        this.mainFilterText = mainFilterText;
+    }
+
+    /**
+     * Get main filter text.
+     * 
+     * @return the mainFilterText
+     */
+    public String getMainFilterText() {
+        return mainFilterText;
+    }
+
+    /**
+     * Returns a text description of the class.
+     *
+     * @return Class description
+     */
+    @Override 
+    public String toString() {
+        return getClass().getName() + '@' + Integer.toHexString(hashCode());
+    }
+}

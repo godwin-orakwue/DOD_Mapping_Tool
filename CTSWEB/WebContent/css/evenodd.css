@@ -1,0 +1,17 @@
+.odd-row {
+	     background-color: #FCFFFE; 
+	     }   
+.even-row {
+	     background-color: #ECF3FE; 
+}
+.odd-rowxx {
+    background-color: #C0C0C0;
+}
+
+.even-rowxx {
+    background-color: #CCCCFF;
+}
+.active-row {
+	     background-color: #FFEBDA !important;
+	     cursor: pointer; 
+} 

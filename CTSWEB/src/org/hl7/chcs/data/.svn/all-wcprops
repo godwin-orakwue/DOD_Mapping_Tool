@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/chcs/data
+END
+CacheBaseDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jengine/!svn/ver/3465/ctsweb/src/org/hl7/chcs/data/CacheBaseDAO.java
+END
+PatientLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jengine/!svn/ver/3465/ctsweb/src/org/hl7/chcs/data/PatientLookup.java
+END
+ProviderLookup.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jengine/!svn/ver/3465/ctsweb/src/org/hl7/chcs/data/ProviderLookup.java
+END
+CHCSRefData.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jengine/!svn/ver/3465/ctsweb/src/org/hl7/chcs/data/CHCSRefData.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jengine/!svn/ver/3465/ctsweb/src/org/hl7/chcs/data/package-info.java
+END

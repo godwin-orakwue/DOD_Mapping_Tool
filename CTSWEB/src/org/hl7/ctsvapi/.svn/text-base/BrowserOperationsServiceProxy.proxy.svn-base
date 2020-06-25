@@ -1,0 +1,351 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="BrowserOperationsService.xml"/>
+      <url path="BrowserOperationsService.wsdl"/>
+      <url path="LookupDesignationsResponse.java"/>
+      <url path="GetSupportedCodeSystems.java"/>
+      <url path="UnknownMatchAlgorithm.java"/>
+      <url path="UnknownCodeSystem.java"/>
+      <url path="UnknownMimeTypeCode_Exception.java"/>
+      <url path="ExpandCodeExpansionContextResponse.java"/>
+      <url path="GetServiceVersion.java"/>
+      <url path="UnknownMatchAlgorithm_Exception.java"/>
+      <url path="UnknownCodeSystem_Exception.java"/>
+      <url path="TimeoutError_Exception.java"/>
+      <url path="UnexpectedError.java"/>
+      <url path="ConceptId.java"/>
+      <url path="LookupPropertiesResponse.java"/>
+      <url path="UnexpectedError_Exception.java"/>
+      <url path="GetServiceNameResponse.java"/>
+      <url path="ArrayOfConceptDesignation.java"/>
+      <url path="GetServiceVersionResponse.java"/>
+      <url path="LookupConceptCodesByDesignation.java"/>
+      <url path="BrowserOperationsService.java"/>
+      <url path="GetCTSVersion.java"/>
+      <url path="ConceptRelationship.java"/>
+      <url path="TimeoutError.java"/>
+      <url path="UnknownConceptCode_Exception.java"/>
+      <url path="VocabBrowserServiceClient.java"/>
+      <url path="GetCTSVersionResponse.java"/>
+      <url path="UnknownConceptCode.java"/>
+      <url path="ExpandCodeExpansionContext.java"/>
+      <url path="ArrayOfConceptProperty.java"/>
+      <url path="LookupCompleteCodedConcept.java"/>
+      <url path="CTSVersionId.java"/>
+      <url path="CodeSystemIdAndVersions.java"/>
+      <url path="InvalidExpansionContext_Exception.java"/>
+      <url path="UnknownLanguageCode.java"/>
+      <url path="ConceptProperty.java"/>
+      <url path="BrowserOperations.java"/>
+      <url path="LookupConceptCodesByDesignationResponse.java"/>
+      <url path="UnknownRelationshipCode.java"/>
+      <url path="CompleteCodedConceptDescription.java"/>
+      <url path="GetSupportedCodeSystemsResponse.java"/>
+      <url path="GetSupportedMatchAlgorithmsResponse.java"/>
+      <url path="LookupCodeExpansionResponse.java"/>
+      <url path="LookupCompleteCodedConceptResponse.java"/>
+      <url path="LookupDesignations.java"/>
+      <url path="GetServiceDescription.java"/>
+      <url path="UnknownRelationshipCode_Exception.java"/>
+      <url path="UnknownPropertyCode.java"/>
+      <url path="UnknownPropertyCode_Exception.java"/>
+      <url path="UnknownMimeTypeCode.java"/>
+      <url path="LookupConceptCodesByProperty.java"/>
+      <url path="ArrayOfConceptRelationship.java"/>
+      <url path="GetSupportedMatchAlgorithms.java"/>
+      <url path="ConceptDesignation.java"/>
+      <url path="RelatedCode.java"/>
+      <url path="package-info.java"/>
+      <url path="LookupProperties.java"/>
+      <url path="GetServiceName.java"/>
+      <url path="BadlyFormedMatchText.java"/>
+      <url path="ObjectFactory.java"/>
+      <url path="LookupConceptCodesByPropertyResponse.java"/>
+      <url path="InvalidExpansionContext.java"/>
+      <url path="LookupCodeExpansion.java"/>
+      <url path="GetServiceDescriptionResponse.java"/>
+      <url path="ArrayOfXsdString.java"/>
+      <url path="BadlyFormedMatchText_Exception.java"/>
+      <url path="UnknownLanguageCode_Exception.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="BrowserOperationsService.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_NONE"/>
+      <list n="PROXY_CLIENTS">
+         <url path="VocabBrowserServiceClient.java"/>
+      </list>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" path="../../../../../vocab-proxy/public_html/WEB-INF/wsdl/VocabBrowser.wsdl"/>
+      <hash n="PROXY_PORTS">
+         <hash n="VocabBrowserService">
+            <value n="ACCESSES_DOC_WRAPPPED" v="true"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="org.hl7.ctsvapi.BrowserOperations"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="VocabBrowserService"/>
+            <hash n="OPERATIONS">
+               <hash n="expandCodeExpansionContext">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getCTSVersion">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getServiceDescription">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getServiceName">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getServiceVersion">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getSupportedCodeSystems">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="getSupportedMatchAlgorithms">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupCodeExpansion">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupCompleteCodedConcept">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupConceptCodesByDesignation">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupConceptCodesByProperty">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupDesignations">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash n="lookupProperties">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_CLIENT_POLICY">
+                  <value n="addressing"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="http" host="localhost" port="8080" path="/axis/services/VocabBrowserService"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="BrowserOperationsService"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="urn://hl7.org/CTSVAPI"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../../../vocab-client.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST"/>
+      <url n="PROXY_WSDL_URL" path="BrowserOperationsService.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BOUND_PORT_TYPE" v="{urn://hl7.org/CTSVAPI}BrowserOperations"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{urn://hl7.org/CTSVAPI}VocabBrowserServiceSoapBinding"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;java.lang.String>.getSupportedMatchAlgorithms"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.expandCodeExpansionContext.byte[]"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.lookupCodeExpansion.org.hl7.ctsvapi.ConceptId.java.lang.String.boolean.boolean.java.lang.String.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.CodeSystemIdAndVersions>.getSupportedCodeSystems.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="org.hl7.ctsvapi.CompleteCodedConceptDescription.lookupCompleteCodedConcept.org.hl7.ctsvapi.ConceptId"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByDesignation.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByProperty.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.java.util.List&lt;java.lang.String>.java.util.List&lt;java.lang.String>.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptDesignation>.lookupDesignations.org.hl7.ctsvapi.ConceptId.java.lang.String.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptProperty>.lookupProperties.org.hl7.ctsvapi.ConceptId.java.util.List&lt;java.lang.String>.java.lang.String.java.lang.String.java.lang.String.java.util.List&lt;java.lang.String>"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="org.hl7.ctsvapi.CTSVersionId.getCTSVersion"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.lang.String.getServiceDescription"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.lang.String.getServiceName"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="BOUND_OPERATION" v="java.lang.String.getServiceVersion"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES"/>
+         <value n="GUID" v="1df89243-013b-1000-8018-c0a80164655d"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="VocabBrowserService"/>
+               <value n="PORT_BINDING_NAME" v="{urn://hl7.org/CTSVAPI}VocabBrowserServiceSoapBinding"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;java.lang.String>.getSupportedMatchAlgorithms"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.expandCodeExpansionContext.byte[]"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.RelatedCode>.lookupCodeExpansion.org.hl7.ctsvapi.ConceptId.java.lang.String.boolean.boolean.java.lang.String.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.CodeSystemIdAndVersions>.getSupportedCodeSystems.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="org.hl7.ctsvapi.CompleteCodedConceptDescription.lookupCompleteCodedConcept.org.hl7.ctsvapi.ConceptId"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByDesignation.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptId>.lookupConceptCodesByProperty.java.lang.String.java.lang.String.java.lang.String.java.lang.String.boolean.java.util.List&lt;java.lang.String>.java.util.List&lt;java.lang.String>.int.int"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptDesignation>.lookupDesignations.org.hl7.ctsvapi.ConceptId.java.lang.String.java.lang.String.java.lang.String"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.util.List&lt;org.hl7.ctsvapi.ConceptProperty>.lookupProperties.org.hl7.ctsvapi.ConceptId.java.util.List&lt;java.lang.String>.java.lang.String.java.lang.String.java.lang.String.java.util.List&lt;java.lang.String>"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="org.hl7.ctsvapi.CTSVersionId.getCTSVersion"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceDescription"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceName"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="java.lang.String.getServiceVersion"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="http" host="localhost" port="8080" path="/axis/services/VocabBrowserService"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{urn://hl7.org/CTSVAPI}BrowserOperations"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="org.hl7.ctsvapi.BrowserOperationsImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="org.hl7.ctsvapi.BrowserOperations"/>
+               <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="org.hl7.ctsvapi.BrowserOperations"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../../../vocab-client.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="urn://hl7.org/CTSVAPI"/>
+         <value n="WS_URI" v="BrowserOperationsService"/>
+         <url n="WS_WSDL_FILE" path="BrowserOperationsService.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>

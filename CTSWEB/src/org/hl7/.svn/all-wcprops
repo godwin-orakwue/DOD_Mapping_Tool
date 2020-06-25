@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7
+END
+GetSupportedMapsResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetSupportedMapsResponse.java
+END
+CodeMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/CodeMap.java
+END
+GetCTSVersionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetCTSVersionResponse.java
+END
+GetCTSVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetCTSVersion.java
+END
+CodeMappingSoap.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/CodeMappingSoap.java
+END
+CodeMappingSoapImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/jengine/!svn/ver/3464/ctsweb/src/org/hl7/CodeMappingSoapImpl.java
+END
+GetServiceNameResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceNameResponse.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ObjectFactory.java
+END
+GetServiceName.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceName.java
+END
+MapCodeResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/MapCodeResponse.java
+END
+MapCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/MapCode.java
+END
+GetSupportedMapsVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetSupportedMapsVersion.java
+END
+ConceptId.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ConceptId.java
+END
+MappedConceptCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/MappedConceptCode.java
+END
+CodeMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/CodeMapping.java
+END
+ST.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/ST.java
+END
+GetServiceDescriptionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceDescriptionResponse.java
+END
+GetServiceDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceDescription.java
+END
+GetServiceVersionResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceVersionResponse.java
+END
+GetServiceVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/GetServiceVersion.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/package-info.java
+END
+CTSVersionId.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/jengine/!svn/ver/2929/ctsweb/src/org/hl7/CTSVersionId.java
+END

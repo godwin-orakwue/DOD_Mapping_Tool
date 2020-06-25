@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#login.jsp" PATH="/login.jsp"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#tabbedView.jsp" PATH="/tabbedView.jsp"
+  SHAPE="480,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#tabbedView.jsp:0" NAME="item"
+   PATH="/tabbedView.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#tabbedView.jsp" NAME="output1"
+    PATH="/tabbedView.jsp" TARGET="rules:#tabbedView.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmap::#viewmap.jsp" NAME="output2"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="viewmap" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#viewmap.jsp" PATH="/viewmap.jsp"
+  SHAPE="592,193,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#viewmap.jsp:0" NAME="item"
+   PATH="/viewmap.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#tabbedView.jsp" NAME="output1"
+    PATH="/tabbedView.jsp" TARGET="rules:#tabbedView.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmap::#viewmap.jsp" NAME="output2"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="viewmap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmapdetail::#viewmapdetail.jsp"
+    NAME="output3" PATH="/viewmapdetail.jsp"
+    TARGET="rules:#viewmapdetail.jsp" TITLE="viewmapdetail" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="deletemap::#deletemap.jsp" NAME="output4"
+    PATH="/deletemap.jsp" TARGET="rules:#deletemap.jsp"
+    TITLE="deletemap" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#viewmapdetail.jsp" PATH="/viewmapdetail.jsp"
+  SHAPE="320,209,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#viewmapdetail.jsp:0" NAME="item"
+   PATH="/viewmapdetail.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#viewmap.jsp" NAME="output1"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmap::#viewmap.jsp" NAME="output2"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="viewmap" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmapdetail::#viewmapdetail.jsp"
+    NAME="output3" PATH="/viewmapdetail.jsp"
+    TARGET="rules:#viewmapdetail.jsp" TITLE="viewmapdetail" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="selectcode::#selectcode.jsp" NAME="output4"
+    PATH="/selectcode.jsp" TARGET="rules:#selectcode.jsp"
+    TITLE="selectcode" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="vaselectcode::#vaselectcode.jsp"
+    NAME="output5" PATH="/vaselectcode.jsp"
+    TARGET="rules:#vaselectcode.jsp" TITLE="vaselectcode" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#deletemap.jsp" PATH="/deletemap.jsp"
+  SHAPE="320,481,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#deletemap.jsp:0" NAME="item"
+   PATH="/deletemap.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#viewmap.jsp" NAME="output1"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewmap::#viewmap.jsp" NAME="output2"
+    PATH="/viewmap.jsp" TARGET="rules:#viewmap.jsp" TITLE="viewmap" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#selectcode.jsp" PATH="/selectcode.jsp"
+  SHAPE="48,193,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#selectcode.jsp:0" NAME="item"
+   PATH="/selectcode.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success::#viewmapdetail.jsp" NAME="output1"
+    PATH="/viewmapdetail.jsp" TARGET="rules:#viewmapdetail.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="selectcode::#selectcode.jsp" NAME="output2"
+    PATH="/selectcode.jsp" TARGET="rules:#selectcode.jsp"
+    TITLE="selectcode" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#vaselectcode.jsp" PATH="/vaselectcode.jsp"
+  SHAPE="48,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#vaselectcode.jsp:0" NAME="item"
+   PATH="/vaselectcode.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="logout_btn::#login.jsp" NAME="output"
+    PATH="/login.jsp" TARGET="rules:#login.jsp" TITLE="logout_btn" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="success::#viewmapdetail.jsp" NAME="output1"
+    PATH="/viewmapdetail.jsp" TARGET="rules:#viewmapdetail.jsp"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="vaselectcode::#vaselectcode.jsp"
+    NAME="output2" PATH="/vaselectcode.jsp"
+    TARGET="rules:#vaselectcode.jsp" TITLE="vaselectcode" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Security Notice</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+        <h1><span class="headingMainColor">Online Privacy and
+        Security Policy</span></h1>
+        <a name="intro"></a>
+        <h1><span class="headingMainColor">Privacy Act Warning</span></h1>
+        Information contained in this system is subject to the Privacy Act of
+        1974 (5 U.S.C. 552a, as amended). Only authorized persons in the
+        conduct of official business may use personal information contained in
+        this system. Any unauthorized disclosure or misuse of personal
+        information may result in criminal and/or civil penalties. Any
+        official or employee may be found guilty of a misdemeanor and fined
+        not more than $5,000.00 if he or she willfully discloses personal
+        information to anyone not entitled to receive information. Any
+        individual may file a civil action against a DoD component or its
+        employees if the aggrieved individual feels that certain provisions of
+        the Privacy Act have been violated. An aggrieved individual may obtain
+        the payment of damage, court costs, and attorney fees in some cases.
+        <p>For site management, information is collected for statistical
+        purposes. This government computer system uses software programs to
+        create summary statistics, which are used for such purposes as
+        assessing what information is of most and least interest, determining
+        technical design specifications, and identifying system performance or
+        problem areas. For site security purposes and to ensure that this
+        service remains available to all users, this government computer
+        system employs software programs to monitor network traffic to
+        identify unauthorized attempts to upload or change information, or
+        otherwise cause damage. Except for authorized law enforcement
+        investigations, no other attempts are made to identify individual
+        users or their usage habits. Raw data logs are used for no other
+        purposes and are scheduled for regular destruction in accordance with
+        National Archives and Records Administration General Schedule 20.
+        Unauthorized attempts to upload information or change information on
+        this service are strictly prohibited and may be punishable under the
+        Computer Fraud and Abuse Act of 1986 (Pub. L. 99-474, Oct. 16, 1986,
+        100 Stat. 1213). Department of Defense Security Notice and Consent
+        Banner</p>
+        <p>This is a DoD computer system. This computer system, including
+        all related equipment, networks, and network devices (specifically
+        including Internet access) are provided only for authorized U.S.
+        government use. DoD computer systems may be monitored for all lawful
+        purposes, including ensuring that their use is authorized, for
+        management of the system, to facilitate protection against
+        unauthorized access, and to verify security procedures, survivability,
+        and operational security. Monitoring includes active attacks by
+        authorized DoD entities to test or verify the security of this system.
+        During monitoring, information may be examined, recorded, copied and
+        used for authorized purposes. Authorized DoD personnel may monitor all
+        information, including personal information, placed or sent over this
+        system.</p>
+
+        <p>Use of this DoD computer system, authorized or unauthorized,
+        constitutes consent to monitoring of this system. Unauthorized use may
+        subject you to criminal prosecution. Evidence of unauthorized use
+        collected during monitoring may be used for administrative, criminal,
+        or civil action.</p>
+        <h1><span class="headingMainColor">Security of Information</span>
+        </h1>
+        At all times, security maintenance and administration is an essential
+        element of web site operation and maintenance. This system employs
+        several levels of security to protect the personal identifiable
+        information. In addition, these security levels
+        are anticipated to be in compliance with the Health Information
+        Portability and Accountability Act of 1996 (HIPAA) (Pub. L. 104-191,
+        Aug 21, 1996,110 Stat. 1936).
+        <ul>
+            <li>Secured Socket Layer (SSL) - A security protocol, which
+            provides a transmission level of encryption between client
+            and server machines. SSL is a method for protecting data in transit.</li>
+        </ul>
+        <br>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

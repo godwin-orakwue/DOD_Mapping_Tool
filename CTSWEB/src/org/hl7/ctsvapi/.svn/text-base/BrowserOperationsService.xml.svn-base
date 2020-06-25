@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns2="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname localpart="BrowserOperationsService" namespaceURI="urn://hl7.org/CTSVAPI"/>
+      <port-info>
+         <wsdl-port localpart="VocabBrowserService" namespaceURI="urn://hl7.org/CTSVAPI"/>
+         <runtime/>
+         <operations>
+            <operation name="getSupportedMatchAlgorithms"/>
+            <operation name="expandCodeExpansionContext"/>
+            <operation name="lookupCodeExpansion"/>
+            <operation name="getSupportedCodeSystems"/>
+            <operation name="lookupCompleteCodedConcept"/>
+            <operation name="lookupConceptCodesByDesignation"/>
+            <operation name="lookupConceptCodesByProperty"/>
+            <operation name="lookupDesignations"/>
+            <operation name="lookupProperties"/>
+            <operation name="getCTSVersion"/>
+            <operation name="getServiceDescription"/>
+            <operation name="getServiceName"/>
+            <operation name="getServiceVersion"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>
